@@ -13,7 +13,7 @@ def tarefas_pendentes_list(request):
     else:
         form = AdicionarTarefa()
 
-    return render(request,'tarefas/tarefas_pendentes.html',{'t_pendentes':tarefas_pendentes, 'form':form})
+    return render(request,'tarefas/tarefas_pendentes.html',{'tarefas_pendentes':tarefas_pendentes, 'form':form})
 
 
 def concluir_tarefa(request, tarefas_id):

@@ -15,7 +15,7 @@
     <hr>
     <h1>Tarefas pendente</h1>
     <div class="list-group">
-      {% for tarefa in t_pendentes %}
+      {% for tarefa in tarefas_pendentes %}
         {% if tarefa.categorias == 'urgente' %}
           <button type="button" class="list-group-item list-group-item-action list-group-item-danger" data-bs-toggle='modal'data-bs-target='#modal{{tarefa.id}}'>
             <h5 class="text-black"> {{ tarefa.descricao }} </h5>
