@@ -1,0 +1,1 @@
+web: gunicorn DiaOrganizado.wsgi --log-file -
